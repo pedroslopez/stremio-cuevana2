@@ -1,0 +1,20 @@
+{
+	"name": "stremio-addon-cuevana2",
+	"version": "1.0.0",
+	"description": "Browse and watch movies from cuevana2",
+	"author": "Pedro S. Lopez",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pedroslopez/stremio-cuevana2.git"
+	},
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"cheerio": "^1.0.0-rc.3",
+		"cloudscraper": "^4.1.0",
+		"request": "^2.88.0",
+		"stremio-addon-sdk": "1.1.x"
+	}
+}
