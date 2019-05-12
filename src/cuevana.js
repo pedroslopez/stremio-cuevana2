@@ -12,7 +12,7 @@ const getTopCatalog = async () => {
 
         let movie = {
             type: 'movie',
-            id: 'cu2_' + $el.attr('href'),
+            id: 'cu2_' + encodeURIComponent($el.attr('href')),
             name: $el.find('.box .tit span').text(),
             poster: $el.find('.img img').attr('src'),
             year: $el.find('.box .ano').text(),
@@ -35,7 +35,7 @@ const searchMovies = async (searchTerm) => {
 
         let movie = {
             type: 'movie',
-            id: 'cu2_' + $el.attr('href'),
+            id: 'cu2_' + encodeURIComponent($el.attr('href')),
             name: $el.find('.box .tit span').text(),
             poster: $el.find('.img img').attr('src'),
             year: $el.find('.box .ano').text(),
@@ -53,7 +53,7 @@ const searchMovies = async (searchTerm) => {
 }
 
 const getMovieMeta = async (movieId) => {
-    const pageUrl = movieId.substring(4);
+    const pageUrl = decodeURIComponent(movieId.substring(4));
     const res = await cloudscraper.get(pageUrl);
     const $ = cheerio.load(res);
 
@@ -84,7 +84,7 @@ const getVideo = async (fileId) => {
 }
 
 const getMovieStreams = async (movieId) => {
-    const pageUrl = movieId.substring(4);
+    const pageUrl = decodeURIComponent(movieId.substring(4));
     const res = await cloudscraper.get(pageUrl);
     const $ = cheerio.load(res);
 
