@@ -7,4 +7,5 @@ const { PORT } = require('./src/constants');
 
 serveHTTP(addonInterface, { port: PORT })
 
-//publishToCentral("URL/manifest.json")
+publishToCentral("https://stremio-cuevana2.herokuapp.com/manifest.json")
+
