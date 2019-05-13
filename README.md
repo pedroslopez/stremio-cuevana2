@@ -1,2 +1,2 @@
 # stremio-cuevana2
-Movies with spanish subtitles from Cuevana2
+Browse and watch movies from Cuevana2.com

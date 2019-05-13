@@ -30,7 +30,8 @@ const manifest = {
 	],
 	"types": ["movie"],
 	"name": "Cuevana2",
-	"description": "Movies with spanish subtitles from Cuevana2.com"
+	"description": "Browse and watch movies from Cuevana2.com",
+	"logo": "https://github.com/pedroslopez/stremio-cuevana2/raw/master/cuevana2logo.png"
 }
 const builder = new addonBuilder(manifest);
 
